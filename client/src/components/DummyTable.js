@@ -19,7 +19,7 @@ const DummyTable = () => {
             );
             setContent(data);
         } catch (e) {}
-    }, [request]);
+    }, [request, pathname]);
 
     useEffect(() => {
         loadedCurrentContent();
