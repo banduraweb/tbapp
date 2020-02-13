@@ -1,0 +1,32 @@
+{
+  "name": "tabsrouter",
+  "version": "1.0.0",
+  "description": "tabs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banduraweb/tbapp.git"
+  },
+  "author": "bandura.a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banduraweb/tbapp/issues"
+  },
+  "homepage": "https://github.com/banduraweb/tbapp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
